@@ -1,4 +1,5 @@
 /*
+ @@ Aula - Pacotes
 	Os pacotes são uma coleção de códigos-fontes que estão no mesmo diretorio e são compilados juntos
 	Eles fornecem uma estrutura para organizar o código em módulos lógicos.
 
@@ -39,11 +40,25 @@
 	Ela será visivel para outros pacotes.
 
 	O comando $ go install , ele gerar um arquivo binário e adiciona ele na raiz da instalação do go.
+	
+	@@ Aula - Pacotes externos
+	É possivel utilizar pacotes de terceiros, adquiridos de outros repositorios. Por exemplo
+	O pacote para validar endereços de emails, utilizando esse comando para adiciona-lo ao projeto:
+
+	$ go get github.com/badoux/checkmail
+
+	por fim ele adiciona esse pacote no go.mod onde fica armazenado as informações e versão do mesmo.
+
+	Para organizar e remover dependências sem uso utilizamos o comando:
+
+	$ go mod tidy
+
 */
 
 package main
 
 import (
+	"github.com/badoux/checkmail" // Sempre que for chama o pacote, sempre será pelo ultimo nome.
 	"auxiliar/auxiliar"
 	"fmt"
 )
@@ -51,4 +66,6 @@ import (
 func main() {
 	fmt.Println("Escrevendo do arquivo main")
 	auxiliar.Escrever()
+	erro := checkmail.ValidateFormat("jhonata.scosta@proton.me") // Para utilizar o pacote importado
+	fmt.Println(erro)
 }
