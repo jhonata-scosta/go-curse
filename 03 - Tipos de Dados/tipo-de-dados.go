@@ -20,7 +20,9 @@ func main() {
 					definir o tamanho do tipo. Por exemplo, um PC 64 bits ele vai ter o tamanho de uint64
 			- 
 	*/
-	var numero int = 10000000
+	var numero int = -10000000
 	fmt.Println(numero)
+	var numero2 uint32 = 100000
+	fmt.Println(numero2)
 	
 }
