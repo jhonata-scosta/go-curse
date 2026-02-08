@@ -24,17 +24,14 @@ func main() {
 					O tipo aceita numeros com pontos flutantes, por exemplo: 720.30 não aceitam virgula,
 					apenas ponto. (.)
 					Também não é possivel definir o tipo float, apenas os seus tipos.
-	*/
-<<<<<<< HEAD:2 - Fundamentos da Linguagem/03 - Tipos de Dados/tipo-de-dados.go
+	*/ 
 
 	// Numeros inteiros
-=======
->>>>>>> 29e189acc1067d0b59ca1c67431920f6673cb80a:03 - Tipos de Dados/tipo-de-dados.go
+
 	var numero int = -10000000
 	fmt.Println(numero)
 	var numero2 uint32 = 100000
 	fmt.Println(numero2)
-<<<<<<< HEAD:2 - Fundamentos da Linguagem/03 - Tipos de Dados/tipo-de-dados.go
 
 	//Alias
 	//Alias de int32
@@ -43,9 +40,7 @@ func main() {
 	//Alias de uint8
 	var numero4 byte = 123
 	fmt.Println(numero4)
-=======
->>>>>>> 29e189acc1067d0b59ca1c67431920f6673cb80a:03 - Tipos de Dados/tipo-de-dados.go
-	
+
 
 	//Numeros Reais
 	var numeroReal1 float32 = 123.44
