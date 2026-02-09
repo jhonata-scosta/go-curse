@@ -22,10 +22,12 @@ func main() {
 	/* É possivel contruir uma função da seguinte maneira. Pois a função também é um tipo
 
 	*/
-	var f = func(txt string) {
-		fmt.Println("Função F")
+	var f = func(txt string) string {
+		fmt.Println(txt)
+		return txt
 	}
 
-	f("Texto da função 1")
+	resultado := f("Texto da função 1")
+	fmt.Println(resultado)
 }
 
