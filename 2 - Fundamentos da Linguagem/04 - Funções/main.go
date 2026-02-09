@@ -36,7 +36,10 @@ func main() {
 	resultado := f("Texto da função 1")
 	fmt.Println(resultado)
 
-	resultadoSoma, resultadoSubtracao := calculosMatematicos(10, 15)
-	fmt.Println(resultadoSoma, resultadoSubtracao)
+	/* Para chamar a função e obter os dois retornos, precisamos declarar as variaveis para cada retorno
+	Porém e possivel ignorar algum retorno utilizando "_", quando foi feita a declaração
+	das variaveis */
+	_ , resultadoSubtracao := calculosMatematicos(10, 15)
+	fmt.Println(resultadoSubtracao)
 }
 
